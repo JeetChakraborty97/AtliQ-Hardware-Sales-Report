@@ -27,11 +27,12 @@ The analysis is built using a well-structured Snowflake Schema data model, ensur
 
 ### Data Model Architecture
 
-*	**Fact Tables:**
+**Fact Tables:**
 *	fact_sales_monthly: Contains transactional sales data, including quantity and net sales.
 *	ns_targets_2021: Stores market-level sales targets for performance comparison.
 
-*	**Dimension Tables:**
+
+**Dimension Tables:**
 *	dim_customer: Customer details, including platform and channel.
 *	dim_product: Product hierarchy (division, segment, category, variant).
 *	dim_market: Geographic hierarchy (market, sub-zone, region).
