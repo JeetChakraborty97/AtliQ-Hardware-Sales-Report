@@ -1,4 +1,6 @@
-# AtliQ-Hardware-Sales-Report
+# AtliQ Hardware Sales Analysis Report
+
+<img width="1536" height="1024" alt="Cover Image" src="https://github.com/user-attachments/assets/1a885588-8a60-4566-aeb9-be207947dc8e" />
 
 ## Problem Statement
 
@@ -15,3 +17,34 @@ Additionally, the data is scattered across multiple sources, requiring transform
 
 To address these challenges, this project aims to build a structured data model and develop analytical reports that provide clear, data-driven insights into business performance. The goal is to enable stakeholders to make informed decisions by identifying growth opportunities, performance gaps, and areas for optimisation.
 
+# Executive Summary
+
+This report presents a comprehensive analysis of AtliQ Hardware’s sales performance across customers, markets, divisions, and products for the year 2021, using historical comparisons and target benchmarks.
+
+## Data Model & Methodology
+
+The analysis is built using a well-structured Snowflake Schema data model, ensuring efficient querying and scalable reporting.
+
+### Data Model Architecture
+
+*	Fact Tables:
+o	fact_sales_monthly: Contains transactional sales data including quantity and net sales.
+
+o	ns_targets_2021: Stores market-level sales targets for performance comparison.
+
+*	Dimension Tables:
+o	dim_customer: Customer details including platform and channel.
+o	dim_product: Product hierarchy (division, segment, category, variant).
+o	dim_market: Geographic hierarchy (market, sub-zone, region).
+o	dim_date: Time dimension (date, month, fiscal year).
+
+### Relationships
+The model follows a snowflake schema structure, where normalized dimension tables are interconnected and link to the central fact tables:
+•	Customer, Product, and Date dimensions are directly linked to the sales fact table.
+•	Market dimension is connected via both customer and target tables, enabling market-level analysis.
+•	Date dimension is shared across both sales and target tables, allowing time-based comparisons (actual vs target).
+This design enables:
+•	Multi-dimensional analysis across customers, products, regions, and time
+•	Efficient aggregation and filtering
+•	Seamless comparison between actual performance and targets
+Overall, the data model ensures high performance, reduced redundancy through normalization, and strong analytical flexibility, aligning with industry best practices for business intelligence solutions.
