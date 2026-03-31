@@ -61,30 +61,37 @@ Overall, the data model ensures high performance, reduced redundancy through nor
 ```
 
 ### net_sales_19
-`=CALCULATE([net_sales], dim_date[fy]="2019")
-`
+```DAX
+=CALCULATE([net_sales], dim_date[fy]="2019")
+```
 
 ### net_sales_20
-`=CALCULATE([net_sales], dim_date[fy]="2020")
-`
+```DAX
+=CALCULATE([net_sales], dim_date[fy]="2020")
+```
 
 ### net_sales_21
-`=CALCULATE([net_sales], dim_date[fy]="2021")
-`
+```DAX
+=CALCULATE([net_sales], dim_date[fy]="2021")
+```
 
 ### target_21
-`=SUM(ns_targets_2021[ns_target])
-`
+```DAX
+=SUM(ns_targets_2021[ns_target])
+```
 
 ### 2021-Target
-`=[net_sales_21]-[target_21]
-`
+```DAX
+=[net_sales_21]-[target_21]
+```
 
 ### 21_vs_20
-`=DIVIDE([net_sales_21]-[net_sales_20], [net_sales_20], 0)
-`
+```DAX
+=DIVIDE([net_sales_21]-[net_sales_20], [net_sales_20], 0)
+```
 
 ### %
-`=DIVIDE([2021-Target],[target_21], 0)
-`
+```DAX
+=DIVIDE([2021-Target],[target_21], 0)
+```
 
