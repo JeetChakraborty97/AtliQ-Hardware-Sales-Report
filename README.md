@@ -27,24 +27,29 @@ The analysis is built using a well-structured Snowflake Schema data model, ensur
 
 ### Data Model Architecture
 
-*	Fact Tables:
-o	fact_sales_monthly: Contains transactional sales data including quantity and net sales.
+*	**Fact Tables:**
+*	fact_sales_monthly: Contains transactional sales data, including quantity and net sales.
+*	ns_targets_2021: Stores market-level sales targets for performance comparison.
 
-o	ns_targets_2021: Stores market-level sales targets for performance comparison.
-
-*	Dimension Tables:
-o	dim_customer: Customer details including platform and channel.
-o	dim_product: Product hierarchy (division, segment, category, variant).
-o	dim_market: Geographic hierarchy (market, sub-zone, region).
-o	dim_date: Time dimension (date, month, fiscal year).
+*	**Dimension Tables:**
+*	dim_customer: Customer details, including platform and channel.
+*	dim_product: Product hierarchy (division, segment, category, variant).
+*	dim_market: Geographic hierarchy (market, sub-zone, region).
+*	dim_date: Time dimension (date, month, fiscal year).
 
 ### Relationships
-The model follows a snowflake schema structure, where normalized dimension tables are interconnected and link to the central fact tables:
-•	Customer, Product, and Date dimensions are directly linked to the sales fact table.
-•	Market dimension is connected via both customer and target tables, enabling market-level analysis.
-•	Date dimension is shared across both sales and target tables, allowing time-based comparisons (actual vs target).
+
+<img width="1248" height="754" alt="Data Model SS" src="https://github.com/user-attachments/assets/10380c96-dd9b-4c27-968d-cf8cdb0604a4" />
+
+The model follows a snowflake schema structure, where normalised dimension tables are interconnected and link to the central fact tables:
+* Customer, Product, and Date dimensions are directly linked to the sales fact table.
+* Market dimension is connected via both customer and target tables, enabling market-level analysis.
+* Date dimension is shared across both sales and target tables, allowing time-based comparisons (actual vs target).
+
 This design enables:
-•	Multi-dimensional analysis across customers, products, regions, and time
-•	Efficient aggregation and filtering
-•	Seamless comparison between actual performance and targets
-Overall, the data model ensures high performance, reduced redundancy through normalization, and strong analytical flexibility, aligning with industry best practices for business intelligence solutions.
+* Multi-dimensional analysis across customers, products, regions, and time
+* Efficient aggregation and filtering
+* Seamless comparison between actual performance and targets
+Overall, the data model ensures high performance, reduced redundancy through normalisation, and strong analytical flexibility, aligning with industry best practices for business intelligence solutions.
+
+
