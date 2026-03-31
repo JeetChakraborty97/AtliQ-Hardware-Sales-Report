@@ -56,7 +56,8 @@ Overall, the data model ensures high performance, reduced redundancy through nor
 ## Measures Created
 
 ### net_sales
-`=SUM(fact_sales_monthly[net_sales_amount])
+`
+=SUM(fact_sales_monthly[net_sales_amount])
 `
 
 ### net_sales_19
