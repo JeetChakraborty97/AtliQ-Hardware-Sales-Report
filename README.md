@@ -95,3 +95,34 @@ Overall, the data model ensures high performance, reduced redundancy through nor
 =DIVIDE([2021-Target],[target_21], 0)
 ```
 
+## Business Performance Overview
+
+AtliQ Hardware demonstrated exceptional growth in 2021, achieving total net sales of $598.9M, a significant increase from $196.7M in 2020, representing a growth of approximately 204.5%. This indicates strong market expansion, increased demand, and effective sales strategies.
+
+### Market and Geographic Insights
+
+The company’s revenue is highly concentrated in a few key markets. India emerged as the top-performing country with $161.3M in sales, followed by the USA ($87.8M) and South Korea ($49.0M). Despite strong growth across regions, all markets underperformed against targets, with an overall shortfall of $54.9M (-8.4%). This suggests gaps in forecasting accuracy or inefficiencies in execution.
+
+### Customer Performance Analysis
+
+Customer-level analysis reveals robust growth across nearly all channels. Major e-commerce platforms such as Amazon ($82.1M) and AtliQ e-Store ($53.0M) significantly contributed to revenue growth, highlighting the increasing importance of digital sales channels. Several customers demonstrated exponential growth rates exceeding 300%, indicating successful partnerships and market penetration strategies. The total customer net sales grew by 304.5% year-over-year, reinforcing the company’s strong customer acquisition and retention capabilities.
+
+### Product and Portfolio Performance
+
+The product portfolio shows a mixed performance pattern. Top-performing products such as AQ Electron 4 3600 Desktop Processor and AQ Smash 2 recorded exponential growth, contributing significantly to overall revenue. Additionally, new product launches generated $176.2M in revenue, demonstrating successful innovation and product-market fit. However, a small segment of products underperformed, indicating opportunities for portfolio optimisation and discontinuation strategies.
+
+### Division-Level Performance
+
+Among the divisions, the PC division recorded the highest growth rate (313.7%), followed by P&A (221.5%) and N&S (84.4%). This indicates a strong shift toward computing products and accessories, aligning with global digital adoption trends.
+
+## Key Insights and Recommendations
+
+* Strengthen target planning and forecasting processes to reduce performance gaps.
+* Continue investing in high-growth markets such as India and the USA while improving performance in underachieving regions.
+* Expand and optimise e-commerce channels, as they are major revenue drivers.
+* Focus on scaling high-performing products while rationalising underperforming ones.
+* Leverage high-growth divisions like PC and P&A for future strategic investments.
+
+## Conclusion
+
+Overall, AtliQ Hardware has achieved outstanding growth in 2021, driven by strong customer expansion, successful product launches, and increasing digital channel penetration. While the company shows significant strengths in scaling and market reach, addressing target gaps and optimising product and regional performance will be critical for sustaining long-term growth.
