@@ -53,4 +53,12 @@ This design enables:
 * Seamless comparison between actual performance and targets
 Overall, the data model ensures high performance, reduced redundancy through normalisation, and strong analytical flexibility, aligning with industry best practices for business intelligence solutions.
 
+## Measures Created
 
+### net_sales
+`=SUM(fact_sales_monthly[net_sales_amount])
+`
+
+### net_sales_19
+`=CALCULATE([net_sales], dim_date[fy]="2019")
+`
